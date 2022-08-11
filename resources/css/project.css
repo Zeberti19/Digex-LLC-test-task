@@ -1,0 +1,298 @@
+.btn
+{
+    cursor: pointer;
+}
+.btn_after
+{
+    margin-top: 0.5rem;
+}
+.btn_usual
+{
+    background-color: #4040e0;
+    border-radius: 0.5rem;
+    color: white;
+    padding: 0.5rem 1rem;
+    min-width: 4rem;
+}
+.comment_data
+{
+    border: 0.1rem solid #d5d5db;
+    margin: 0 0 1rem;
+    padding: 0.5rem;
+}
+.comment-add
+{
+    margin-bottom: 1rem;
+}
+.comment-add__button-container
+{
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.comment-add .text-field_comment
+{
+    min-height: 5rem;
+    min-width: 30rem;
+}
+.form_comment-add
+{
+    display: none;
+    margin-top: 1rem;
+    width: 100%;
+}
+.comment__author
+{
+    font-weight: bold;
+}
+.comments_list
+{
+    margin: 1rem 0;
+}
+.comments_list__content_empty
+{
+    text-align: center;
+}
+.comment__panel_bottom
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.comment__replies
+{
+    margin-left: 5rem;
+    min-width: 20rem;
+}
+.comment__replies-count
+{
+    color: #827c7c;
+}
+.comment__reply-add
+{
+    display: none;
+    margin-top: 1rem;
+}
+.delimiter_horizontal
+{
+    margin: 1rem 0;
+}
+.error
+{
+    color: #d70e0e;
+    margin: 1rem 0;
+}
+.form__label
+{
+    display: block;
+    font-weight: bold;
+}
+.form__input-file
+{
+    cursor: pointer;
+    margin-top: 1rem;
+}
+.form__submit
+{
+    display: block;
+    margin-top: 1rem;
+}
+.input-container
+{
+    margin-bottom: 0.5rem;
+}
+.header
+{
+    margin: 1rem 0;
+}
+.header_lvl1
+{
+    font-size: 2em;
+    font-weight: bold;
+}
+.header.header_lvl1
+{
+    margin: 0 0 1rem;
+}
+.header_lvl2
+{
+    font-size: 1.3em;
+    font-weight: bold;
+}
+.href
+{
+    cursor: pointer;
+}
+.href:hover
+{
+    text-decoration: underline;
+}
+.href_selected
+{
+    text-decoration: underline;
+}
+.href_unselected
+{
+    color: #999292;
+}
+.list__element
+{
+    margin-bottom: 1rem;
+}
+.list__element:last-child
+{
+    margin-bottom: 0;
+}
+.main .main__content
+{
+    max-width: 60rem;
+}
+.main__panel_top
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+.page-posts__btn-post-actions
+{
+    display: flex;
+}
+.page-posts__btn-post-action
+{
+    display: inline;
+    margin-left: 0.5rem;
+}
+.posts
+{
+    margin: 1rem;
+}
+.posts__author
+{
+    text-align: left;
+}
+.post_edit
+{
+    display: flex;
+}
+.post__img
+{
+    max-height: 20rem;
+    max-width: 20rem;
+}
+.post_edit__img
+{
+    margin-right: 2rem;
+}
+.post_show__img-container
+{
+    margin-right: 1rem;
+}
+.posts_list__post
+{
+    display: flex;
+    align-items: center;
+    border: 0.05rem solid #939393;
+    border-radius: 1rem;
+    margin-bottom: 0.5rem;
+    min-height: 5rem;
+    padding: 0.5rem;
+}
+.posts__message_empty
+{
+    font-size: 1.2em;
+    margin-left: 1rem;
+}
+.posts__post
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #fff;
+    border: 0.1rem solid #423939;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+}
+.posts__post-href
+{
+    display: block;
+    flex-grow: 1;
+}
+.href.posts__post-href
+{
+    text-decoration: none;
+}
+.posts__post-title
+{
+    font-size: 1.1em;
+    font-weight: bold;
+}
+.posts__post-title:hover
+{
+    text-decoration: underline;
+}
+.post__text
+{
+    margin: 0 0 1rem;
+}
+.post_show__comments-header
+{
+    margin-right: 0.5rem;
+}
+.post_show__comments-headers
+{
+    display: flex;
+    justify-content: center;
+}
+.post_show__main
+{
+    display: flex;
+}
+.section
+{
+    background-color: #fff;
+    border: 0.1rem solid #423939;
+    border-radius: 1rem;
+    min-height: 30rem;
+    padding: 1rem;
+}
+.server-message
+{
+    border-radius: 0.3rem;
+    color: #fff;
+    left: 50%;
+    top: 2.5rem;
+    padding: 1rem;
+    position: fixed;
+    transform: translateX(-50%);
+}
+.server-message_error
+{
+    background-color: #e52020;
+}
+.server-message_success
+{
+    background-color: #39b604;
+}
+.text-field_big
+{
+    min-width: 30rem;
+    min-height: 10rem;
+}
+.users
+{
+    margin: 1rem;
+}
+.users_list__user
+{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+    background-color: #fff;
+    border: 0.1rem solid #423939;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+}
