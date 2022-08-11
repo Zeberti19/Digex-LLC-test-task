@@ -22,7 +22,6 @@ class ImageFactory extends Factory
         $path = Storage::disk('images')->putFile('posts',
                                                         new File(__DIR__ ."/ImagesTest/image{$n}.jpg"));
 
-        //$path = Storage::disk('images')->put('posts', fake()->image('') );
         return
             [
                 'path' => $path,
