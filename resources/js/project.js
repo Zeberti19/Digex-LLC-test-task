@@ -30,6 +30,15 @@ class CProject
         document.querySelector('#comment-add_' + commentableType + '__button').style.display ='none';
     }
 
+    /**
+     * This function for submit buttons to prevent an user from double clicks on submit button
+     */
+    formSubmitDbClickPrevent(Element)
+    {
+        Element.disabled = true;
+        Element.parentElement.submit();
+    }
+
     replyAddShow(commentId)
     {
         document.querySelector('#comment__reply-add' + commentId).style.display ='block';

@@ -26,7 +26,7 @@
             @csrf
             <label for="comment_{{$commentableType}}__text" class="form__label">Your comment</label>
             <textarea id="comment_{{$commentableType}}__text" class="text-field_comment text-field_big" name="text"></textarea>
-            <input type="submit" class="btn btn_usual form__submit" value="Save">
+            <input class="btn btn_usual form__submit" type="submit" value="{{ __( 'Save' ) }}" onclick="PrjHelper.formSubmitDbClickPrevent(this)">
             <hr class="delimiter delimiter_horizontal">
         </form>
     </div>

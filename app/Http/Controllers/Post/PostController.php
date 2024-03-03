@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Post;
 
 use App\Helpers\Error as e;
 use App\Helpers\Response as r;
-use App\Http\Controllers\Post\AbstractClasses\APostController;
+use App\Http\Controllers\_Common\AbstractClasses\AController;
 use App\Models\Image\Interfaces\IImagePostLogo;
 use App\Models\Post\AbstractClasses\APost;
 use Illuminate\Auth\Access\AuthorizationException;
@@ -18,7 +18,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Validation\ValidationException;
 
-class PostController extends APostController
+class PostController extends AController
 {
     protected string $viewPath = 'posts';
 

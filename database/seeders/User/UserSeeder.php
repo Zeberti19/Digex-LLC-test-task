@@ -2,11 +2,10 @@
 
 namespace Database\Seeders\User;
 
-use App\Models\Post\AbstractClasses\APost;
 use App\Models\User\AbstractClasses\AUser;
-use Database\Seeders\User\AbstractClasses\AUserSeeder;
+use Illuminate\Database\Seeder;
 
-class UserSeeder extends AUserSeeder
+class UserSeeder extends Seeder
 {
     /**
      * Run the database seeds.

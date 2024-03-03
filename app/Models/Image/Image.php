@@ -13,7 +13,6 @@ class Image extends AImage
 {
     protected static function booted()
     {
-        //TODO create event class for this
         static::deleted(function ($Image) {
             Storage::disk('images')->delete( $Image->path );
         });

@@ -2,10 +2,9 @@
 
 namespace App\Helpers;
 
-use App\_Common\IClass;
 use Illuminate\Http\RedirectResponse;
 
-class Response implements IClass
+class Response
 {
     /**
      * Create a new redirect response to the previous location with HTTP code 303

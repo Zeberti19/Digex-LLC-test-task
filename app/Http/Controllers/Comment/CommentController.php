@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Comment;
 
 use App\Helpers\Error as e;
 use App\Helpers\Response as r;
-use App\Http\Controllers\Comment\AbstractClasses\ACommentController;
+use App\Http\Controllers\_Common\AbstractClasses\AController;
 use App\Models\Comment\AbstractClasses\AComment;
 use App\Models\Comment\Interfaces\ICommentable;
 use Illuminate\Http\RedirectResponse;
@@ -13,7 +13,7 @@ use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\ValidationException;
 
-class CommentController extends ACommentController
+class CommentController extends AController
 {
     public function store(Request $Request, ICommentable $Commentable, AComment $Comment): Response | RedirectResponse
     {

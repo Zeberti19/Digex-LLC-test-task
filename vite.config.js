@@ -10,8 +10,11 @@ export default defineConfig({
     plugins: [
         laravel({
             input: [
-                'resources/css/*',
-                'resources/js/*',
+                'resources/css/app.css',
+                'resources/css/project.css',
+                'resources/js/app.js',
+                'resources/js/bootstrap.js',
+                'resources/js/project.js',
             ],
             refresh: true,
         }),

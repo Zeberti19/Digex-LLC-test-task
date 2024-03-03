@@ -6,9 +6,9 @@ use App\Models\Comment\AbstractClasses\AComment;
 use App\Models\Comment\Interfaces\ICommentable;
 use App\Models\Post\AbstractClasses\APost;
 use App\Models\User\AbstractClasses\AUser;
-use Database\Seeders\Comment\AbstractClasses\ACommentSeeder;
+use Illuminate\Database\Seeder;
 
-class CommentSeeder extends ACommentSeeder
+class CommentSeeder extends Seeder
 {
     public function __construct(
         protected AComment $CommentClass,

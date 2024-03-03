@@ -1,8 +1,8 @@
 <?php
 
-use App\Http\Controllers\Comment\AbstractClasses\ACommentController;
-use App\Http\Controllers\Post\AbstractClasses\APostController;
-use App\Http\Controllers\User\AbstractClasses\AUserController;
+use App\Http\Controllers\Comment\CommentController;
+use App\Http\Controllers\Post\PostController;
+use App\Http\Controllers\User\UserController;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Route;
 
@@ -20,21 +20,18 @@ use Illuminate\Support\Facades\Route;
 Route::middleware(['auth'])->group(
 function()
 {
-    $CommentController = App::make( ACommentController::class );
-    $PostController = App::make( APostController::class );
-    $UserController = App::make( AUserController::class );
 
-    Route::get('/',  [$PostController::class, 'index'] )->name('home');
+    Route::get('/',  [PostController::class, 'index'] )->name('home');
 
-    Route::resource('posts', $PostController::class);
+    Route::resource('posts', PostController::class);
 
-    Route::get('/users/{user}/posts', [$UserController::class, 'postsShow'])->name('users.posts');
-    Route::resource('users',  $UserController::class )->only('index');
+    Route::get('/users/{user}/posts', [UserController::class, 'postsShow'])->name('users.posts');
+    Route::resource('users',  UserController::class )->only('index');
 
     Route::post('{commentableType}/{commentable}/comments',
-    function($commentableType, $Commentable) use( $CommentController )
+    function($commentableType, $Commentable)
     {
-        return App::call( $CommentController::class .'@store', ['Commentable' => $Commentable]);
+        return App::call( CommentController::class .'@store', ['Commentable' => $Commentable]);
     })->name('comments.store');
 });
 

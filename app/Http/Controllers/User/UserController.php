@@ -2,12 +2,12 @@
 
 namespace App\Http\Controllers\User;
 
-use App\Http\Controllers\User\AbstractClasses\AUserController;
+use App\Http\Controllers\_Common\AbstractClasses\AController;
 use App\Models\User\AbstractClasses\AUser;
 use Illuminate\Contracts\View\Factory as Factory;
 use Illuminate\Contracts\View\View as View;
 
-class UserController extends AUserController
+class UserController extends AController
 {
     protected string $viewPath = 'users';
 

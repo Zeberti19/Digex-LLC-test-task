@@ -2,10 +2,9 @@
 
 namespace App\Helpers;
 
-use App\_Common\IClass;
 use Illuminate\Support\Facades\Storage;
 
-class File implements IClass
+class File
 {
     /**
      * Returns full URL of stored public images

@@ -2,7 +2,6 @@
 
 namespace App\Models\_Common\Interfaces;
 
-use App\_Common\IClass;
 use Illuminate\Contracts\Broadcasting\HasBroadcastChannel;
 use Illuminate\Contracts\Queue\QueueableEntity;
 use Illuminate\Contracts\Routing\UrlRoutable;
@@ -13,7 +12,7 @@ use Illuminate\Contracts\Support\Jsonable;
 use ArrayAccess;
 use JsonSerializable;
 
-interface IModel extends IClass, Arrayable, ArrayAccess, CanBeEscapedWhenCastToString, HasBroadcastChannel, Jsonable,
+interface IModel extends Arrayable, ArrayAccess, CanBeEscapedWhenCastToString, HasBroadcastChannel, Jsonable,
                          JsonSerializable, QueueableEntity, UrlRoutable
 {
     //add here something common for all models if you will need it

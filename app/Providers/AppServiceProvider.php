@@ -36,17 +36,14 @@ class AppServiceProvider extends ServiceProvider
     public function register()
     {
         $this->app->bind(AComment::class, Comment::class);
-        $this->app->bind(ACommentController::class, CommentController::class);
         $this->app->bind(ACommentSeeder::class, CommentSeeder::class);
 
         $this->app->bind(IImagePostLogo::class, ImagePostLogo::class);
 
         $this->app->bind(APost::class, Post::class);
-        $this->app->bind(APostController::class, PostController::class);
         $this->app->bind(APostSeeder::class, PostSeeder::class);
 
         $this->app->bind(AUser::class, User::class);
-        $this->app->bind(AUserController::class, UserController::class);
         $this->app->bind(AUserSeeder::class, UserSeeder::class);
     }
 

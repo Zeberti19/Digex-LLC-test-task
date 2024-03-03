@@ -2,8 +2,6 @@
 
 namespace App\Models\User\Interfaces;
 
-use App\_Common\IClass;
-
 use ArrayAccess;
 use JsonSerializable;
 
@@ -18,7 +16,7 @@ use Illuminate\Contracts\Support\Jsonable;
 use Illuminate\Contracts\Routing\UrlRoutable;
 
 
-interface IUser extends IClass, Arrayable, ArrayAccess,
+interface IUser extends Arrayable, ArrayAccess,
     CanBeEscapedWhenCastToString, HasBroadcastChannel, Jsonable,
     JsonSerializable, QueueableEntity, UrlRoutable, AuthenticatableContract,
     AuthorizableContract, CanResetPasswordContract

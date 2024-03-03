@@ -1,7 +1,7 @@
 # Test task for the company "Digex"
 The task is as follows:
 
-to build an API with Laravel
+to build a Laravel app (simple design)
 
 The Structure:
 users can add a post (it should have a text body and a title)
@@ -38,6 +38,6 @@ about some additional settings to make app to work properly. Namely:
 - run command "php artisan storage:link" so uploaded images can be accessible
 - run database migrations
 
-If you need test data you can use database seeder. The seeder creates several users 
-and create posts for some of them. Some posts will have logo image and some haven't.
-Also seeder creates several comments and replies for random posts.
+If you need test data then you can use database seeder. The seeder creates several users 
+and create posts for some of them. Some posts will have logo image, and some of them haven't.
+Also, seeder creates several comments and replies for random posts.

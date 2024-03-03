@@ -19,6 +19,6 @@
             <label class="form__label" for="form_post__input-image" >{{ __('Image for your post (optional)') }}</label>
             <input type="file" class="form__input-file" name="image"  accept="image/*" id="form_post__input-image">
         </div>
-        <input class="btn btn_usual form__submit" type="submit" value="{{ __( 'Create' ) }}">
+        <input class="btn btn_usual form__submit" type="submit" value="{{ __( 'Create' ) }}" onclick="PrjHelper.formSubmitDbClickPrevent(this)">
     </form>
 @endsection

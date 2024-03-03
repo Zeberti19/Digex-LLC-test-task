@@ -21,7 +21,7 @@
             </div>
             <div class="input-container">
                 <label for="posts-create-input-text" class="form__label">{{__('Text')}}</label>
-                <textarea id="posts-create-input-text" class="text-field_big" type="text" name="text">{{old('text') ?: $Post->text}}</textarea>
+                <textarea id="posts-create-input-text" class="text-field_big post_edit__text-edit" type="text" name="text">{{old('text') ?: $Post->text}}</textarea>
             </div>
             <div class="input-container">
                 <label class="form__label" for="form_post__input-image" >{{ __( 'Image for your post (optional)' ) }}</label>

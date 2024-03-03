@@ -2,9 +2,7 @@
 
 namespace App\Helpers;
 
-use App\_Common\IClass;
-
-class Error implements IClass
+class Error
 {
     /**
      * Shows different messages depended on debug mode (either message for a programmer or user)

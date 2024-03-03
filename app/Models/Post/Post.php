@@ -21,7 +21,6 @@ class Post extends APost
 
     protected static function booted()
     {
-        //TODO create event class for this
         static::deleting(function ($Post) {
             if ($Post->image) $Post->image::destroy($Post->image->id);
         });
