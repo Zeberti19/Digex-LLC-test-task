@@ -31,7 +31,7 @@ add a comment to the post
 reply to the comment
 
 -----------------------------------------------------
-#Developer comments
+# Developer comments
 If you want not only check my code, but also run application you should pay attentions 
 about some additional settings to make app to work properly. Namely:
 
